@@ -1,0 +1,249 @@
+﻿<UserControl
+    x:Class="Mathdoku.MathdokuGame"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:my="clr-namespace:Mathdoku"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"    d:DesignHeight="768" d:DesignWidth="1366">
+
+    <Grid x:Name="LayoutRoot" Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="PageTitle" Text="mathdoku" Foreground="White" FontSize="40" HorizontalAlignment="Center" Margin="9,-7,0,0" />
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid Width="750">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle0x0" StrokeThickness="1" Width="75" Stroke="White"  MouseLeftButtonDown="generic_PointerPressed"  />
+                            <TextBlock Name="title0x0" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value0x0" Text="6"  FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle0x1" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed"  />
+                            <TextBlock Name="title0x1" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value0x1" Text="6"  FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle0x2" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title0x2" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value0x2" Text="6"  FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle0x3" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title0x3" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value0x3" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle0x4" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title0x4" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value0x4" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle0x5" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title0x5" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value0x5" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle1x0" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title1x0" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value1x0" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle1x1" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title1x1" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value1x1" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle1x2" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title1x2" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value1x2" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle1x3" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title1x3" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value1x3" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle1x4" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title1x4" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value1x4" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle1x5" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title1x5" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value1x5" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle2x0" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title2x0" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value2x0" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle2x1" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title2x1" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value2x1" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle2x2" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title2x2" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value2x2" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle2x3" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title2x3" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value2x3" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle2x4" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title2x4" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value2x4" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle2x5" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title2x5" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value2x5" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle3x0" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title3x0" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value3x0" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle3x1" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title3x1" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value3x1" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle3x2" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title3x2" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value3x2" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle3x3" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title3x3" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value3x3" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle3x4" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title3x4" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value3x4" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle3x5" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title3x5" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value3x5" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle4x0" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title4x0" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value4x0" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle4x1" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title4x1" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value4x1" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle4x2" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title4x2" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value4x2" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle4x3" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title4x3" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value4x3" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle4x4" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title4x4" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value4x4" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle4x5" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title4x5" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value4x5" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle5x0" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title5x0" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value5x0" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle5x1" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title5x1" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value5x1" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle5x2" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title5x2" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value5x2" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle5x3" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title5x3" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value5x3" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle5x4" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title5x4" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value5x4" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                        <Grid>
+                            <Rectangle Height="75" Name="rectangle5x5" StrokeThickness="1" Width="75" Stroke="White" MouseLeftButtonDown="generic_PointerPressed" />
+                            <TextBlock Name="title5x5" Text="+ 123" FontSize="24" IsHitTestVisible="False" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Name="value5x5" Text="6" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" IsHitTestVisible="False" Foreground="White"/>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Height="30" Text="Puzzle" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBlock Height="30" Name="seedtext" Text=""  FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="white"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Content="help" Height="71" Name="help" Width="140" FontSize="24" Background="Black" Foreground="White" Click="help_Click"/>
+                        <Button Content="hint" Height="71" Name="hintBoard" Width="140" FontSize="24" Background="Black" Foreground="White"  Click="hintBoard_Click" />
+                        <Button Content="validate" Height="71" Name="validateBoard" Width="140" FontSize="24" Background="Black" Foreground="White"  Click="validateBoard_Click" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Content="new" Height="71" Name="newBoard" Width="140" FontSize="24" Background="Black" Foreground="White"  Click="newBoard_Click" />
+                        <Button Content="undo" Height="71" Name="undo" Width="140" FontSize="24" Background="Black" Foreground="White"  Click="undo_Click" />
+                        <Button Content="redo" Height="71" Name="redo" Width="140" FontSize="24" Background="Black" Foreground="White"  Click="redo_Click" />
+                    </StackPanel>
+
+                </StackPanel>
+                <my:SliderControl x:Name="sliderInput" Grid.Row="0" Height="137" Width="77" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Top"></my:SliderControl>
+                <my:NumberPanelControl x:Name="numPanelInput" Visibility="Collapsed" HorizontalAlignment="Right"/>
+
+            </Grid>
+        </Grid>
+        <my:NewGame x:Name="newgamepanel" Grid.Row="2" Visibility="Collapsed" IsHitTestVisible="False" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <my:Help x:Name="helppanel" Grid.RowSpan="3" Height="755" Visibility="Collapsed" IsHitTestVisible="false" HorizontalAlignment="Center" VerticalAlignment="Top"></my:Help>
+        <Rectangle Grid.Row="2" Height="1" Visibility="Collapsed" Name="themefill" Fill="Green" StrokeThickness="1" Width="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Rectangle Grid.Row="2" Height="1" Visibility="Collapsed" Name="normalstroke" Stroke="White" StrokeThickness="1" Width="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Rectangle Grid.Row="2" Height="1" Visibility="Collapsed" Name="errorstroke" Stroke="Red" StrokeThickness="1" Width="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Rectangle Grid.Row="2" Height="1" Visibility="Collapsed" Name="onfill" Fill="Black" StrokeThickness="1" Width="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Rectangle Grid.Row="2" Height="1" Visibility="Collapsed" Name="disabledfill" Fill="Gray" StrokeThickness="1" Width="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <TextBlock Grid.Row="2" Name="smallText" Text="" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="16" Visibility="Collapsed"/>
+        <TextBlock Grid.Row="2" Name="largeText" Text="" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="18" Visibility="Collapsed"/>
+    </Grid>
+</UserControl>

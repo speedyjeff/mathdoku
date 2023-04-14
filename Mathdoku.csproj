@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="controls.png" />
+    <None Remove="Images\controls.png" />
+    <None Remove="Images\input.png" />
+    <None Remove="Images\Logo.png" />
+    <None Remove="Images\mainscreen.png" />
+    <None Remove="Images\newpuzzle.png" />
+    <None Remove="Images\rowscolumns.png" />
+    <None Remove="Images\SmallLogo.png" />
+    <None Remove="Images\SplashScreen.png" />
+    <None Remove="Images\StoreLogo.png" />
+    <None Remove="input.png" />
+    <None Remove="newpuzzle.png" />
+    <None Remove="rowscolumns.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\controls.png" />
+    <Resource Include="Images\input.png" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\mainscreen.png" />
+    <Resource Include="Images\newpuzzle.png" />
+    <Resource Include="Images\rowscolumns.png" />
+    <Resource Include="Images\SmallLogo.png" />
+    <Resource Include="Images\SplashScreen.png" />
+    <Resource Include="Images\StoreLogo.png" />
+  </ItemGroup>
+
+</Project>

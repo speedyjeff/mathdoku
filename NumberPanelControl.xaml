@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Mathdoku.NumberPanelControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mathdoku"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="100">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="Number1" Content="1" Height="50" Width="100" Background="black" Foreground="white" Click="Button_Click"/>
+            <Button x:Name="Number2" Content="2" Height="50" Width="100" Background="black" Foreground="white" Click="Button_Click_1"/>
+            <Button x:Name="Number3" Content="3" Height="50" Width="100" Background="black" Foreground="white" Click="Button_Click_2"/>
+            <Button x:Name="Number4" Content="4" Height="50" Width="100" Background="black" Foreground="white" Click="Button_Click_3"/>
+            <Button x:Name="Number5" Content="5" Height="50" Width="100" Background="black" Foreground="white" Click="Button_Click_4"/>
+            <Button x:Name="Number6" Content="6" Height="50" Width="100" Background="black" Foreground="white" Click="Button_Click_5"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

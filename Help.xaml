@@ -1,0 +1,61 @@
+﻿<UserControl
+    x:Class="Mathdoku.Help"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Mathdoku"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontSize="24"
+    Foreground="White"
+    d:DesignHeight="750" d:DesignWidth="480">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <ScrollViewer x:Name="LayoutRoot" Margin="8,8, 8, 8" Background="Black" VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Grid Grid.Row="1">
+                <TextBlock HorizontalAlignment="Left" Text="mathdoku help" VerticalAlignment="Top" />
+                <Button Content="X" Height="72" Name="close" Width="72" HorizontalAlignment="Right" VerticalAlignment="Top" Click="close_Click" />
+            </Grid>
+            <StackPanel Grid.Row="2">
+                <TextBlock HorizontalAlignment="Left" Text="Objective:" VerticalAlignment="Top"  TextWrapping="Wrap" FontWeight="Bold"/>
+                <TextBlock HorizontalAlignment="Left" Text="Fill the grid in with the digits 1 through 6 such that:" VerticalAlignment="Top"  TextWrapping="Wrap" />
+                <TextBlock HorizontalAlignment="Left" Text="1 - Each row contains exactly one of each digit" VerticalAlignment="Top"  TextWrapping="Wrap" />
+                <TextBlock HorizontalAlignment="Left" Text="2 - Each column contains exactly one of each digit" VerticalAlignment="Top"  TextWrapping="Wrap" />
+                <TextBlock HorizontalAlignment="Left" Text="3 - Each colored group of cells is a cage containing digits which achieve the specified result using the specified mathematical operation: addition (+), subtraction (−), multiplication (×), and division (÷). (Unlike Sudoku, digits may repeat within a group.)" VerticalAlignment="Top"  TextWrapping="Wrap" />
+                <Image Stretch="Fill" Width="200" Source="{DynamicResource ResourceKey=rowscolumns}"/>
+                <TextBlock HorizontalAlignment="Left" Text="User controls:" VerticalAlignment="Top"  TextWrapping="Wrap" FontWeight="Bold"/>
+                <TextBlock HorizontalAlignment="Left" Text="To play the game select a cell and scroll through and select one or more numbers for each cell.  Selecting multiple numbers notate guesses." VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <Image Stretch="Fill" Width="200" Source="{DynamicResource ResourceKey=input}" />
+                <TextBlock HorizontalAlignment="Left" Text="Progress is auto-saved and instantly recalled when returning to Mathdoku." VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="The game can also be controlled through a set of important buttons:" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <Image Stretch="Fill" Width="200" Source="{DynamicResource ResourceKey=controls}" />
+                <TextBlock HorizontalAlignment="Left" Text="[new] Generate a new board" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="[hint] Replaces a blank cell or one with guesses with a correct value" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="[validation] Check answers against the solution and highlight incorrect answers" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="[help] Help" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="[undo] Undo the last update" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="[redo] Redo the last undo" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <Image Stretch="Fill" Width="200" Source="{DynamicResource ResourceKey=newpuzzle}" />
+                <TextBlock HorizontalAlignment="Left" Text="[6 by 6 (default)] Generates a puzzle 6 squares by 6 (default configuration)" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="[4 by 4 (easy)] Generates a puzzle 4 squares by 4 (easy puzzle to solve)" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="[Limit '-' and '÷' cages to two cells] When selected the puzzles follow the normal rules of associativity for subtraction and division" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="[Puzzle name] Type in text or a numeric value to replay a favorite puzzle or share one with a friend" VerticalAlignment="Top"  TextWrapping="Wrap"/>
+                <TextBlock HorizontalAlignment="Left" Text="Tips and Tricks:" VerticalAlignment="Top"  TextWrapping="Wrap" FontWeight="Bold"/>
+                <TextBlock HorizontalAlignment="Left" Text="1 - Multiplication (x) cages never contain 1's" VerticalAlignment="Top"  TextWrapping="Wrap" />
+                <TextBlock HorizontalAlignment="Left" Text="2 - Division (÷) cages with more than 2 cells has at least one 1" VerticalAlignment="Top"  TextWrapping="Wrap" />
+                <TextBlock HorizontalAlignment="Left" Text="3 - Start with the Division (÷) and Multiplication (x) cages then move to Addition (+) and Subtraction (-)" VerticalAlignment="Top"  TextWrapping="Wrap" />
+                <TextBlock HorizontalAlignment="Left" Text="Additional information:" VerticalAlignment="Top"  TextWrapping="Wrap" FontWeight="Bold"/>
+                <TextBlock HorizontalAlignment="Left" Text="http://en.wikipedia.org/wiki/KenKen" VerticalAlignment="Top"  TextWrapping="Wrap" />
+            </StackPanel>
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
